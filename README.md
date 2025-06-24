@@ -2,6 +2,7 @@
 
 A sleek and interactive web application built with **React**, allowing users to explore countries, search dynamically by various criteria, and navigate through a paginated list with a seamless user experience.
 
+Live Site 👉 [https://country-app-nu-blond.vercel.app/]
 ---
 
 ## ✨ Features
@@ -35,7 +36,7 @@ A sleek and interactive web application built with **React**, allowing users to 
 |----------------|-----------------------------------------------------|
 | **React**      | JavaScript library for building user interfaces     |
 | **Tailwind CSS** | Utility-first CSS framework for custom design     |
-| **Lucide React** | Beautiful and customizable SVG icons               |
+| **Lucide React** | Beautiful and customizable SVG icons              |
 
 ---
 
@@ -45,4 +46,4 @@ A sleek and interactive web application built with **React**, allowing users to 
 
 ```bash
 git clone https://github.com/your-username/country-explorer.git
-cd country-explorer
+cd country-app
