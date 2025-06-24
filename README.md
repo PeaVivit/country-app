@@ -2,6 +2,7 @@
 
 A sleek and interactive web application built with **React**, allowing users to explore countries, search dynamically by various criteria, and navigate through a paginated list with a seamless user experience.
 
+---
 Live Site 👉 [https://country-app-nu-blond.vercel.app/]
 ---
 
