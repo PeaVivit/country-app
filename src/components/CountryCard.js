@@ -35,7 +35,7 @@ const CountryCard = ({ country }) => {
     textAlign: "center",
     transition: "transform 0.8s",
     transformStyle: "preserve-3d",
-    transform: isFlipped ? "rotateY(180deg)" : "rotateY(0deg)",
+    transform: `${isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)'} translateZ(0)`,
   };
 
   const flipCardFaceStyle = {
