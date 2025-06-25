@@ -92,7 +92,13 @@ const CountryCard = ({ country }) => {
         {/* Front */}
         <div
           style={flipCardFaceStyle}
-          className={`bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 flex flex-col ${holographicCardStyle}`}
+          className={`
+            bg-white dark:bg-gray-800
+            border border-gray-200 dark:border-gray-700
+            flex flex-col
+            ${ holographicCardStyle }
+            transition-opacity duration-300 ease-in-out ${isFlipped ? 'opacity-0' : 'opacity-100'}
+          `}
         >
           <img
             src={country?.flags?.png || "/fallback-flag.png"}
@@ -120,7 +126,9 @@ const CountryCard = ({ country }) => {
         {/* Back */}
         <div
           style={{ ...flipCardFaceStyle, ...flipCardBackStyle }}
-          className={`bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 flex flex-col justify-between p-4 ${holographicCardStyle}`}
+          className={`bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 flex flex-col justify-between p-4 ${holographicCardStyle}
+            transition-opacity duration-300 ease-in-out ${isFlipped ? 'opacity-100' : 'opacity-0'}
+          `}
         >
           <div className="flex flex-col flex-grow z-20 relative">
             <h5 className="text-xl font-bold mb-6 text-gray-900 dark:text-white border-b pb-2 border-gray-200 dark:border-gray-700">
